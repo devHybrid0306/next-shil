@@ -5,9 +5,9 @@ export const HomePageContainer = styled.div`
   padding: 0px;
   margin: 0px;
   z-index: -1;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   height: 100%;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 `;
 
 export const HeroContainer = styled.div`
@@ -401,7 +401,7 @@ export const Title = styled.h1`
 export const Description = styled.span`
   color: rgba(255, 255, 255, 0.7);
   font-size: 1rem;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   text-align: center;
   z-index: 99;
 `;
@@ -494,7 +494,7 @@ export const AddressContainer = styled.div`
     background-color: rgba(41, 41, 42, 0.1);
     font-size: 24px;
     padding: 0px 32px;
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-weight: bold;
     border-radius: 8px;
     margin-right: 16px;

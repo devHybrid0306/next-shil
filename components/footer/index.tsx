@@ -1,22 +1,22 @@
 import { useRouter } from "next/router";
 import React from "react";
+import { FaDiscord, FaTwitter } from "react-icons/fa";
 import styled from "styled-components";
 
 import { SCREENS } from "../../constants";
-import FooterItem from "./footer-item";
+import NavbarItem from "../nav-bar-item";
 
 const FooterContainer = styled.div`
   display: flex;
   flex-direction: row;
-  align-items: center;
   background-color: black;
   height: 300px;
-  padding: 0px 5%;
+  padding: 90px 5%;
   margin-top: 80px;
   cursor: pointer;
 
   @media (min-width: ${SCREENS.md}) {
-    padding: 0px 15%;
+    padding: 90px 15%;
   }
 
   .footer-logo {
@@ -31,7 +31,7 @@ const FooterContainer = styled.div`
 const FooterItemContainer = styled.div`
   display: flex;
   flex-direction: column;
-  padding-left: 5%;
+  padding-left: 10%;
 `;
 
 const Footer = () => {
@@ -46,21 +46,33 @@ const Footer = () => {
         onClick={() => router.push("/")}
       />
       <FooterItemContainer>
-        <FooterItem
+        <NavbarItem
           text="Information"
           url="https://invincible-hearing-4f0.notion.site/Shil-me-8c7e38a1094743639173cd47bfe23f5d"
         />
-        <FooterItem
+        <NavbarItem
           text="Careers"
           url="https://shilme.notion.site/shilme/Shil-me-Careers-967cb84844064b8d8874654734074e8c"
         />
-        <FooterItem
+        <NavbarItem
           text="Privacy Policy"
           url="https://invincible-hearing-4f0.notion.site/Shil-me-Privacy-Policy-8c0e73dd67d54ae08a201ecd770f6371"
         />
-        <FooterItem
+        <NavbarItem
           text="Terms and Conditions"
           url="https://invincible-hearing-4f0.notion.site/Shil-me-Terms-of-Service-5ae7929d63704f0385c626283af9cac5"
+        />
+      </FooterItemContainer>
+      <FooterItemContainer>
+        <NavbarItem
+          text="Twitter"
+          icon={<FaTwitter color="#fff" />}
+          url="https://twitter.com/ShilMeHQ"
+        />
+        <NavbarItem
+          text="Discord"
+          icon={<FaDiscord color="#fff" />}
+          url="https://discord.gg/swpk7fWvm8"
         />
       </FooterItemContainer>
     </FooterContainer>

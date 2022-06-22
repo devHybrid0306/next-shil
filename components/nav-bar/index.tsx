@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 import { SCREENS } from "../../constants";
 import Logo from "../logo";
-import NavbarItem from "./nav-bar-item";
+import NavbarItem from "../nav-bar-item";
 
 const NavbarContainer = styled.div`
   display: flex;
